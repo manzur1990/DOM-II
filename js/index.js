@@ -4,8 +4,8 @@ const get = (selector =>{
     return document.querySelector(selector)
 })
 
-const getAll = (selector2 =>{
-    return document.querySelectorAll(selector2)
+const getAll = (selector =>{
+    return document.querySelectorAll(selector)
 })
 
 // Click + Text Content
@@ -88,13 +88,10 @@ const links = getAll('.nav-link')
 links.forEach(link => {
     link.addEventListener('click', event => {
          link.style.color = 'red'
-          event.preventDefault(); // Not sure if it works
+          event.preventDefault(); 
   
     })
   }) 
-
-  
-
 
   
 
